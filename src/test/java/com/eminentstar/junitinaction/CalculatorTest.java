@@ -1,8 +1,8 @@
-import static junit.framework.Assert.assertEquals;
+package com.eminentstar.junitinaction;
+
+import static junit.framework.Assert.*;
 
 import org.junit.Test;
-
-import com.eminentstar.junitinaction.Calculator;
 
 public class CalculatorTest {
 
