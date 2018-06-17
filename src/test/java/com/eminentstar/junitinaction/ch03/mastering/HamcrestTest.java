@@ -1,6 +1,8 @@
-package com.eminentstar.junitinaction.chap3;
+package com.eminentstar.junitinaction.ch03.mastering;
 
-import static org.junit.Assert.assertTrue;
+import static org.hamcrest.CoreMatchers.*;
+import static org.junit.Assert.*;
+import static org.junit.matchers.JUnitMatchers.hasItem;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -24,5 +26,12 @@ public class HamcrestTest {
     assertTrue(values.contains("one")
       || values.contains("two")
       || values.contains("three"));
+  }
+
+  @Test
+  public void testWithHamcrest() {
+    assertThat(values, hasItem(anyOf(
+      equalTo("one"), equalTo("two"), equalTo("three"))
+    ));
   }
 }

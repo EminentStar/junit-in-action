@@ -1,4 +1,4 @@
-package com.eminentstar.junitinaction.chap3;
+package com.eminentstar.junitinaction.ch03.mastering;
 
 import static junit.framework.Assert.*;
 
